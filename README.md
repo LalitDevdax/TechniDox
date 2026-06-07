@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TechniDox — AI-Native Developer Documentation Platform
 
 A high-fidelity recreation of the Figma home page design built as a premium, responsive single-page web application using **Nuxt 3**, **Vue 3**, and **Tailwind CSS**.
@@ -99,3 +100,6 @@ npm run dev
 ```bash
 npm run build
 ```
+=======
+# TechniDox
+>>>>>>> 893a257b9ea435d92fa47c06e1e0f6a819bb3d63
