@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 # TechniDox — AI-Native Developer Documentation Platform
 
 A high-fidelity recreation of the Figma home page design built as a premium, responsive single-page web application using **Nuxt 3**, **Vue 3**, and **Tailwind CSS**.
 
 ## Live Demo
-* **Hosted URL**: [https://venturseed-technidox.vercel.app](https://venturseed-technidox.vercel.app) *(Deployable on Vercel, Netlify, or Firebase)*
+* **Hosted URL**: [https://venturseed-technidox.vercel.app](https://venturseed-technidox.vercel.app)
 
 ---
 
@@ -19,18 +18,23 @@ A high-fidelity recreation of the Figma home page design built as a premium, res
   * **Physically Accurate Pendulum Swing**: A pricing tag in the `PlansSection` that rotates from `-25deg` to `25deg` around the rope contact pivot, utilizing separate static rope and swinging loop assets to avoid shearing/gaps.
   * **Dashboard ROI Cards**: High-fidelity hover lift and interactive metrics.
 
+### What are Composables?
+In Nuxt 3 and Vue 3, **Composables** are reusable stateful functions that leverage the Vue Composition API. Instead of duplicating logic across components, features are encapsulated inside the `composables/` folder. Nuxt auto-imports these hooks so they are globally available without boilerplate imports.
+* **`useScrollDirection.js`**: Tracks user scroll direction. It shows the navigation header when scrolling up, hides it when scrolling down, and keeps it visible when the mobile menu is open.
+* **`useCopyToClipboard.js`**: A clipboard copy utility helper.
+
 ---
 
 ## Folder Structure
 
-Following standard Nuxt 3 project conventions:
+Following standard Nuxt 3 single-page application conventions:
 ```bash
 ├── assets/
 │   └── css/
 │       └── main.css         # Custom grid tokens, glassmorphism, & animations
 ├── components/              # Clean, modular Vue components
 │   ├── Header.vue                 # Fixed navbar with mobile menu toggle
-│   ├── Hero.vue                   # 19-column grid layout, text signals, and floating cards
+│   ├── Hero.vue                   # Grid layout, text signals, and floating cards
 │   ├── AINativeSection.vue        # AI-native documentation engine cards
 │   ├── EnterpriseGradeSection.vue # Executive dashboard metrics card
 │   ├── PlansSection.vue           # Swing pricing tag section
@@ -42,7 +46,7 @@ Following standard Nuxt 3 project conventions:
 │   ├── useCopyToClipboard.js    # Modern clipboard copy utility with fallback
 │   └── useScrollDirection.js    # Tracks header visibility and scroll state
 ├── pages/
-│   └── index.vue            # Main landing page assembling sections
+│   └── index.vue            # Main landing page assembling sections (Single Page App)
 ├── public/                  # Static assets
 │   └── images/              # Restructured and descriptive asset paths
 │       ├── hero/            # Hero floating cards and arrow icons
@@ -72,7 +76,7 @@ Overlay screenshots and review notes can be found directly in the [`/pixelay`](.
 ## Tradeoffs, Shortcuts, & Next Steps
 
 ### 1. Image Slicing and Swing physics
-* **Tradeoff**: In the original Figma layout, the rope, ring, and tag were a single flat image. Rotating it resulted in shearing or required clipping out pieces, causing visual artifacts.
+* **Tradeoff**: In the original Figma mockup, the rope, ring, and tag were a single flat image. Rotating it resulted in shearing or required clipping out pieces, causing visual artifacts.
 * **Solution**: Programmatically separated the image into `rope.png` (static background) and `loop_tag.png` (swinging element). Fitted a quadratic curve to the rope to draw it continuously under the loop. This ensures zero gaps and a 100% realistic rotation around the rope center.
 
 ### 2. Tailored Grid Layout
@@ -100,6 +104,3 @@ npm run dev
 ```bash
 npm run build
 ```
-=======
-# TechniDox
->>>>>>> 893a257b9ea435d92fa47c06e1e0f6a819bb3d63

@@ -7,9 +7,9 @@
         
         <!-- Brand / Left Column -->
         <div class="md:col-span-4 space-y-4">
-          <NuxtLink to="/" class="flex items-center flex-shrink-0">
+          <a href="#" @click.prevent class="flex items-center flex-shrink-0">
             <img src="/images/logos/technidox_logo.png" alt="TechniDox" class="h-8 w-auto" />
-          </NuxtLink>
+          </a>
           <p 
             class="text-[13px] leading-relaxed max-w-xs text-slate-800 font-inter font-normal"
           >
@@ -50,10 +50,10 @@
               Company
             </h4>
             <ul class="space-y-2.5 font-inter">
-              <li><NuxtLink to="/about" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">About Us</NuxtLink></li>
-              <li><NuxtLink to="#" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Careers</NuxtLink></li>
-              <li><NuxtLink to="/blog" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Blog</NuxtLink></li>
-              <li><NuxtLink to="#" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Partnerships</NuxtLink></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">About Us</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Careers</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Blog</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Partnerships</a></li>
             </ul>
           </div>
 
@@ -63,9 +63,9 @@
               Resources
             </h4>
             <ul class="space-y-2.5 font-inter">
-              <li><NuxtLink to="#" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Help Center</NuxtLink></li>
-              <li><NuxtLink to="#" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Fees & Limits</NuxtLink></li>
-              <li><NuxtLink to="#" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">System Status</NuxtLink></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Help Center</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Fees & Limits</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">System Status</a></li>
             </ul>
           </div>
 
@@ -75,10 +75,10 @@
               Legal & Compliance
             </h4>
             <ul class="space-y-2.5 font-inter">
-              <li><NuxtLink to="/terms" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Terms of Service</NuxtLink></li>
-              <li><NuxtLink to="/privacy" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Privacy Policy</NuxtLink></li>
-              <li><NuxtLink to="#" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Risk Disclosure</NuxtLink></li>
-              <li><NuxtLink to="/cookie-policy" class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Cookie Policy</NuxtLink></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Terms of Service</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Privacy Policy</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Risk Disclosure</a></li>
+              <li><a href="#" @click.prevent class="text-[13px] text-slate-500 hover:text-brand-primary transition-colors">Cookie Policy</a></li>
             </ul>
           </div>
 
