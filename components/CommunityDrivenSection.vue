@@ -52,7 +52,7 @@
         </div>
 
         <!-- Right Column: Mock UI Container -->
-        <div class="border border-[#868585] rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 shadow-[0_0_20px_10px_rgba(0,0,0,0.05)]">
+        <div class="border border-[#868585] rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),_0_20px_25px_-5px_rgba(0,0,0,0.1)]">
           <div class="space-y-4">
             
             <div 

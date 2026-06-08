@@ -28,7 +28,7 @@
         <div 
           v-for="card in cards" 
           :key="card.label" 
-          class="rounded-xl sm:rounded-2xl py-5 px-5 sm:py-7 sm:px-8 flex flex-col justify-between shadow-[0_0_20px_10px_rgba(0,0,0,0.05)]"
+          class="rounded-xl sm:rounded-2xl py-5 px-5 sm:py-7 sm:px-8 flex flex-col justify-between shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),_0_20px_25px_-5px_rgba(0,0,0,0.1)]"
           :class="card.isDark 
             ? 'bg-brand-primary text-white' 
             : 'bg-white border border-[#868585]'
