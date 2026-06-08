@@ -27,164 +27,46 @@
         
         <!-- Left Column: 4 Feature Items -->
         <div class="space-y-8">
-          
-          <!-- Item 1: Gamified Contributions -->
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-[#EEECFC] flex items-center justify-center flex-shrink-0 mt-0.5">
+          <div 
+            v-for="feat in features" 
+            :key="feat.title" 
+            class="flex items-start gap-4"
+          >
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 mt-0.5" :class="feat.bg">
               <img 
-                src="/images/community_driven/gamified_icon.png" 
-                alt="Gamified Contributions" 
+                :src="`/images/community_driven/${feat.icon}`" 
+                :alt="feat.title" 
                 class="w-6 h-6 object-contain" 
                 loading="lazy"
               />
             </div>
             <div>
               <h3 class="text-[17px] font-normal text-slate-900 mb-1">
-                Gamified Contributions
+                {{ feat.title }}
               </h3>
               <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
-                Streak tracking, impact badges, and achievement systems that reward quality contributions and retain community members.
+                {{ feat.desc }}
               </p>
             </div>
           </div>
-
-          <!-- Item 2: Micro-Contribution Architecture -->
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-[#FFF5E5] flex items-center justify-center flex-shrink-0 mt-0.5">
-              <img 
-                src="/images/community_driven/micro_tasks_icon.png" 
-                alt="Micro-Contribution Architecture" 
-                class="w-6 h-6 object-contain" 
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <h3 class="text-[17px] font-normal text-slate-900 mb-1">
-                Micro-Contribution Architecture
-              </h3>
-              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
-                Complex tasks broken into 5-10 minute contributions, making open source accessible to everyone regardless of time or expertise.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 3: Mentorship Matching -->
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-[#E6F9EC] flex items-center justify-center flex-shrink-0 mt-0.5">
-              <img 
-                src="/images/community_driven/mentorship_icon.png" 
-                alt="Mentorship Matching" 
-                class="w-6 h-6 object-contain" 
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <h3 class="text-[17px] font-normal text-slate-900 mb-1">
-                Mentorship Matching
-              </h3>
-              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
-                AI-powered pairing of experienced contributors with newcomers, fostering knowledge transfer and building stronger communities.
-              </p>
-            </div>
-          </div>
-
-          <!-- Item 4: Peer Validation Network -->
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-[#EEECFC] flex items-center justify-center flex-shrink-0 mt-0.5">
-              <img 
-                src="/images/community_driven/peer_validation_icon.png" 
-                alt="Peer Validation Network" 
-                class="w-6 h-6 object-contain" 
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <h3 class="text-[17px] font-normal text-slate-900 mb-1">
-                Peer Validation Network
-              </h3>
-              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
-                Accept, edit, and reject workflows that improve AI models over time through community-driven quality signals.
-              </p>
-            </div>
-          </div>
-
         </div>
 
         <!-- Right Column: Mock UI Container -->
         <div class="border border-[#868585] rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 shadow-[0_0_20px_10px_rgba(0,0,0,0.05)]">
           <div class="space-y-4">
             
-            <!-- Step 1 -->
-            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
+            <div 
+              v-for="step in steps" 
+              :key="step.title" 
+              class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4"
+            >
               <div class="flex items-center gap-3">
-                <div class="w-7 h-7 rounded-full bg-[#EEECFC] flex items-center justify-center text-xs font-bold text-brand-primary flex-shrink-0">
-                  1
-                </div>
-                <div>
-                  <div class="font-sans text-sm font-semibold leading-snug text-[#1A1A2E]">
-                    AI generates documentation
-                  </div>
-                  <div class="font-inter text-xs font-normal text-[#868585] mt-0.5">
-                    From codebase analysis
-                  </div>
-                </div>
-              </div>
-              <img 
-                src="/images/community_driven/validated_check_icon.png" 
-                alt="Validated" 
-                class="w-5 h-5 flex-shrink-0" 
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Step 2 -->
-            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-7 h-7 rounded-full bg-[#FFF5E5] flex items-center justify-center text-xs font-bold text-brand-accent flex-shrink-0">
-                  2
-                </div>
-                <div>
-                  <div class="font-sans text-sm font-semibold leading-snug text-[#1A1A2E]">
-                    Quality scoring & routing
-                  </div>
-                  <div class="font-inter text-xs font-normal text-[#868585] mt-0.5">
-                    Confidence: 72% - Review needed
-                  </div>
-                </div>
-              </div>
-              <span class="px-2 py-0.5 text-[10px] font-semibold text-brand-accent bg-[#FFF5E5] border border-brand-accent/20 rounded-[4px] select-none font-inter">
-                Review
-              </span>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-7 h-7 rounded-full bg-[#E6F9EC] flex items-center justify-center text-xs font-bold text-brand-success flex-shrink-0">
-                  3
-                </div>
-                <div>
-                  <div class="font-sans text-sm font-semibold leading-snug text-[#1A1A2E]">
-                    Community review
-                  </div>
-                  <div class="font-inter text-xs font-normal text-[#868585] mt-0.5">
-                    3 contributors validated
-                  </div>
-                </div>
-              </div>
-              <img 
-                src="/images/community_driven/validated_check_icon.png" 
-                alt="Validated" 
-                class="w-5 h-5 flex-shrink-0" 
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Step 4 -->
-            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-7 h-7 rounded-full bg-[#24BD2E] flex items-center justify-center flex-shrink-0 text-white">
+                <div 
+                  class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" 
+                  :class="[step.numBg, step.numText]"
+                >
                   <svg 
+                    v-if="step.isSvg"
                     class="w-4 h-4" 
                     viewBox="0 0 24 24" 
                     fill="none" 
@@ -196,19 +78,29 @@
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="8 12 11 15 16 9" />
                   </svg>
+                  <template v-else>{{ step.num }}</template>
                 </div>
                 <div>
                   <div class="font-sans text-sm font-semibold leading-snug text-[#1A1A2E]">
-                    Published & improving
+                    {{ step.title }}
                   </div>
                   <div class="font-inter text-xs font-normal text-[#868585] mt-0.5">
-                    AI learns from feedback
+                    {{ step.desc }}
                   </div>
                 </div>
               </div>
+
+              <!-- Right badge or icon -->
+              <span 
+                v-if="step.badge" 
+                class="px-2 py-0.5 text-[10px] font-semibold text-brand-accent bg-[#FFF5E5] border border-brand-accent/20 rounded-[4px] select-none font-inter"
+              >
+                {{ step.badge }}
+              </span>
               <img 
-                src="/images/community_driven/completion_star_icon.png" 
-                alt="Star rating" 
+                v-else-if="step.rightIcon" 
+                :src="`/images/community_driven/${step.rightIcon}`" 
+                :alt="step.title" 
                 class="w-5 h-5 flex-shrink-0" 
                 loading="lazy"
               />
@@ -224,5 +116,67 @@
 </template>
 
 <script setup>
-// No extra setup required
+const features = [
+  {
+    title: 'Gamified Contributions',
+    desc: 'Streak tracking, impact badges, and achievement systems that reward quality contributions and retain community members.',
+    icon: 'gamified_icon.png',
+    bg: 'bg-[#EEECFC]'
+  },
+  {
+    title: 'Micro-Contribution Architecture',
+    desc: 'Complex tasks broken into 5-10 minute contributions, making open source accessible to everyone regardless of time or expertise.',
+    icon: 'micro_tasks_icon.png',
+    bg: 'bg-[#FFF5E5]'
+  },
+  {
+    title: 'Mentorship Matching',
+    desc: 'AI-powered pairing of experienced contributors with newcomers, fostering knowledge transfer and building stronger communities.',
+    icon: 'mentorship_icon.png',
+    bg: 'bg-[#E6F9EC]'
+  },
+  {
+    title: 'Peer Validation Network',
+    desc: 'Accept, edit, and reject workflows that improve AI models over time through community-driven quality signals.',
+    icon: 'peer_validation_icon.png',
+    bg: 'bg-[#EEECFC]'
+  }
+]
+
+const steps = [
+  {
+    num: 1,
+    numBg: 'bg-[#EEECFC]',
+    numText: 'text-brand-primary',
+    title: 'AI generates documentation',
+    desc: 'From codebase analysis',
+    rightIcon: 'validated_check_icon.png'
+  },
+  {
+    num: 2,
+    numBg: 'bg-[#FFF5E5]',
+    numText: 'text-brand-accent',
+    title: 'Quality scoring & routing',
+    desc: 'Confidence: 72% - Review needed',
+    badge: 'Review'
+  },
+  {
+    num: 3,
+    numBg: 'bg-[#E6F9EC]',
+    numText: 'text-brand-success',
+    title: 'Community review',
+    desc: '3 contributors validated',
+    rightIcon: 'validated_check_icon.png'
+  },
+  {
+    num: 4,
+    numBg: 'bg-[#24BD2E]',
+    numText: 'text-white',
+    isSvg: true,
+    title: 'Published & improving',
+    desc: 'AI learns from feedback',
+    rightIcon: 'completion_star_icon.png'
+  }
+]
 </script>
+

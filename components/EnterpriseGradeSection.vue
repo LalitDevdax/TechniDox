@@ -39,63 +39,22 @@
 
         <!-- ================= MAIN STATS ROW (TOP 4 CARDS) ================= -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-          
-          <!-- Card 1: Time Saved -->
-          <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
+          <div 
+            v-for="metric in metrics" 
+            :key="metric.label" 
+            class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg"
+          >
             <div class="flex items-center gap-2">
-              <img src="/images/enterprise_grade/time_saved_icon.png" alt="Time Saved" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
-              <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Time Saved</span>
+              <img :src="`/images/enterprise_grade/${metric.icon}`" :alt="metric.label" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
+              <span class="text-xs font-medium tracking-wide text-[#AEADAD]">{{ metric.label }}</span>
             </div>
             <div class="mt-3">
-              <div class="text-3xl font-medium tracking-tight text-white">847h</div>
-              <div class="flex items-center gap-1 text-[11px] font-semibold mt-0.5 text-[#66DB3A]">
-                <span>↑ 23% this month</span>
+              <div class="text-3xl font-medium tracking-tight text-white">{{ metric.value }}</div>
+              <div class="flex items-center gap-1 text-[11px] font-semibold mt-0.5" :class="metric.textColor">
+                <span>{{ metric.change }}</span>
               </div>
             </div>
           </div>
-
-          <!-- Card 2: Productivity Gain -->
-          <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
-            <div class="flex items-center gap-2">
-              <img src="/images/enterprise_grade/productivity_gain_icon.png" alt="Productivity Gain" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
-              <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Productivity Gain</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-3xl font-medium tracking-tight text-white">+34%</div>
-              <div class="flex items-center gap-1 text-[11px] font-semibold mt-0.5 text-[#66DB3A]">
-                <span>↑ 12% vs baseline</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Support Tickets -->
-          <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
-            <div class="flex items-center gap-2">
-              <img src="/images/enterprise_grade/support_tickets_icon.png" alt="Support Tickets" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
-              <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Support Tickets</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-3xl font-medium tracking-tight text-white">-42%</div>
-              <div class="flex items-center gap-1 text-[11px] font-semibold mt-0.5 text-[#66DB3A]">
-                <span>↓ 156 tickets/month</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: Onboarding Speed -->
-          <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
-            <div class="flex items-center gap-2">
-              <img src="/images/enterprise_grade/onboarding_speed_icon.png" alt="Onboarding Speed" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
-              <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Onboarding Speed</span>
-            </div>
-            <div class="mt-3">
-              <div class="text-[32px] font-medium tracking-tight text-white">3.2d</div>
-              <div class="flex items-center gap-1 text-[11px] font-semibold mt-0.5 text-[#66DB3A]">
-                <span>↓ 64% faster</span>
-              </div>
-            </div>
-          </div>
-
         </div>
 
         <!-- ================= LOWER ADVANCED METRICS ROW (3 CARDS) ================= -->
@@ -132,7 +91,10 @@
                 </div>
               </div>
               <div class="flex items-center gap-1.5 text-[11px] font-semibold mt-2 text-[#66DB3A]">
-                <CheckCircle2 class="w-3.5 h-3.5 text-[#66DB3A]" />
+                <svg class="w-3.5 h-3.5 text-[#66DB3A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
                 <span>Audit ready</span>
               </div>
             </div>
@@ -166,5 +128,34 @@
 </template>
 
 <script setup>
-import { CheckCircle2 } from 'lucide-vue-next'
+const metrics = [
+  {
+    label: 'Time Saved',
+    icon: 'time_saved_icon.png',
+    value: '847h',
+    change: '↑ 23% this month',
+    textColor: 'text-[#66DB3A]'
+  },
+  {
+    label: 'Productivity Gain',
+    icon: 'productivity_gain_icon.png',
+    value: '+34%',
+    change: '↑ 12% vs baseline',
+    textColor: 'text-[#66DB3A]'
+  },
+  {
+    label: 'Support Tickets',
+    icon: 'support_tickets_icon.png',
+    value: '-42%',
+    change: '↓ 156 tickets/month',
+    textColor: 'text-[#66DB3A]'
+  },
+  {
+    label: 'Onboarding Speed',
+    icon: 'onboarding_speed_icon.png',
+    value: '3.2d',
+    change: '↓ 64% faster',
+    textColor: 'text-[#66DB3A]'
+  }
+]
 </script>

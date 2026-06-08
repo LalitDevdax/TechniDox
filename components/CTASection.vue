@@ -37,5 +37,5 @@
 </template>
 
 <script setup>
-// No extra setup required
+
 </script>
