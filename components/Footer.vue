@@ -8,7 +8,7 @@
         <!-- Brand / Left Column -->
         <div class="md:col-span-4 space-y-4">
           <a href="#" @click.prevent class="flex items-center flex-shrink-0">
-            <img src="/images/logos/technidox_logo.png" alt="TechniDox" class="h-8 w-auto" />
+            <img src="/images/logos/technidox_logo.png" alt="TechniDox" class="h-8 w-auto" loading="lazy" />
           </a>
           <p 
             class="text-[13px] leading-relaxed max-w-xs text-slate-800 font-inter font-normal"

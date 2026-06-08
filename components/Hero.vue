@@ -5,10 +5,10 @@
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.55)_0%,transparent_65%)] pointer-events-none z-0" />
 
     <!-- Floating cards — xl only -->
-    <img src="/images/hero/hero_documentation_preview.png" alt="Documentation card" class="absolute hidden xl:block pointer-events-none z-20 drop-shadow-xl" style="width:230px;left:18px;top:160px;" />
-    <img src="/images/hero/hero_interactive_guide.png"     alt="Guide preview"       class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;left:-8px;top:340px;" />
-    <img src="/images/hero/hero_api_list_card.png"         alt="API card"            class="absolute hidden xl:block pointer-events-none z-20 drop-shadow-xl" style="width:230px;right:18px;top:160px;" />
-    <img src="/images/hero/hero_roi_analytics_preview.png" alt="Analytics card"      class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;right:-8px;top:340px;" />
+    <img src="/images/hero/hero_documentation_preview.png" alt="Documentation card" class="absolute hidden xl:block pointer-events-none z-20 drop-shadow-xl" style="width:230px;left:18px;top:160px;" loading="eager" fetchpriority="high" />
+    <img src="/images/hero/hero_interactive_guide.png"     alt="Guide preview"       class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;left:-8px;top:290px;" loading="eager" fetchpriority="high" />
+    <img src="/images/hero/hero_api_list_card.png"         alt="API card"            class="absolute hidden xl:block pointer-events-none z-20 drop-shadow-xl" style="width:230px;right:18px;top:160px;" loading="eager" fetchpriority="high" />
+    <img src="/images/hero/hero_roi_analytics_preview.png" alt="Analytics card"      class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;right:-8px;top:290px;" loading="eager" fetchpriority="high" />
 
     <!-- Center content -->
     <div class="relative z-30 w-full max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
@@ -29,7 +29,7 @@
 
       <!-- Subheading -->
       <p
-        class="text-[13px] sm:text-sm lg:text-[16px] leading-relaxed opacity-0 animate-fade-in-up font-medium max-w-[680px] mx-auto mt-4 sm:mt-4 text-brand-grey"
+        class="text-[13px] sm:text-sm lg:text-[16px] leading-relaxed opacity-0 animate-fade-in-up font-normal max-w-[680px] mx-auto mt-4 sm:mt-4 text-brand-grey"
         style="animation-delay:0.2s;"
       >
         AI-native platform that generates documentation from code, scores quality in real-time, routes low

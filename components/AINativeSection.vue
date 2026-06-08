@@ -7,10 +7,10 @@
         <p class="text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-2 text-brand-accent">
           AI-Native Documentation Engine
         </p>
-        <h2 class="text-xl sm:text-3xl lg:text-4xl font-extrabold mb-3 text-brand-primary">
+        <h2 class="text-xl sm:text-3xl lg:text-4xl font-bold mb-3 text-brand-primary">
           AI-Native Documentation Engine
         </h2>
-        <p class="text-[12px] sm:text-[14px] font-medium max-w-lg mx-auto leading-relaxed text-brand-grey">
+        <p class="text-[12px] sm:text-[14px] font-normal max-w-lg mx-auto leading-relaxed text-brand-grey">
           Three AI engines working together to transform how teams
           create, validate, and scale technical documentation.
         </p>
@@ -23,7 +23,7 @@
         <div class="rounded-xl sm:rounded-2xl p-4 sm:px-5 sm:py-6 flex flex-col gap-3 bg-[#F4F3FF] border border-slate-200">
           <!-- Mobile: icon + title in one row -->
           <div class="flex items-center gap-3">
-            <img src="/images/ai_native/ai_generator_icon.png" alt="AI Generator" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 object-contain" />
+            <img src="/images/ai_native/ai_generator_icon.png" alt="AI Generator" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 object-contain" loading="lazy" />
             <h3 class="text-sm sm:text-base font-semibold text-[#2C2D4A] leading-tight">
               AI Documentation Generator
             </h3>
@@ -45,7 +45,7 @@
         <!-- Card 2: Orange -->
         <div class="rounded-xl sm:rounded-2xl p-4 sm:px-5 sm:py-6 flex flex-col gap-3 bg-[#FFF8EC] border border-slate-200">
           <div class="flex items-center gap-3">
-            <img src="/images/ai_native/ai_scorer_icon.png" alt="AI Scorer" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 object-contain" />
+            <img src="/images/ai_native/ai_scorer_icon.png" alt="AI Scorer" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 object-contain" loading="lazy" />
             <h3 class="text-sm sm:text-base font-semibold text-[#2C2D4A] leading-tight">
               Documentation Quality Scorer
             </h3>
@@ -67,7 +67,7 @@
         <!-- Card 3: Green -->
         <div class="rounded-xl sm:rounded-2xl p-4 sm:px-5 sm:py-6 flex flex-col gap-3 bg-[#EDFBF5] border border-slate-200">
           <div class="flex items-center gap-3">
-            <img src="/images/ai_native/human_review_icon.png" alt="Human Review" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 object-contain" />
+            <img src="/images/ai_native/human_review_icon.png" alt="Human Review" class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 object-contain" loading="lazy" />
             <h3 class="text-sm sm:text-base font-semibold text-[#2C2D4A] leading-tight">
               Human-in-the-Loop Review
             </h3>

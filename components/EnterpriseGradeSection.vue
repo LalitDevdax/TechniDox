@@ -10,10 +10,10 @@
         <p class="text-xs font-bold tracking-widest uppercase text-brand-accent">
           ROI & Analytics
         </p>
-        <h2 class="text-2xl sm:text-[40px] leading-tight font-extrabold text-brand-primary px-2 sm:px-0">
+        <h2 class="text-2xl sm:text-[40px] leading-tight font-bold text-brand-primary px-2 sm:px-0">
           Enterprise-Grade ROI And Analytics
         </h2>
-        <p class="text-[13px] sm:text-[15px] font-medium max-w-2xl mx-auto leading-relaxed text-brand-grey px-2 sm:px-0">
+        <p class="text-[13px] sm:text-[15px] font-normal max-w-2xl mx-auto leading-relaxed text-brand-grey px-2 sm:px-0">
           The first documentation platform with measurable business impact. Track time saved,
           productivity gains, and documentation health in real-time.
         </p>
@@ -43,7 +43,7 @@
           <!-- Card 1: Time Saved -->
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
             <div class="flex items-center gap-2">
-              <Clock class="w-4 h-4 text-indigo-400" />
+              <img src="/images/enterprise_grade/time_saved_icon.png" alt="Time Saved" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Time Saved</span>
             </div>
             <div class="mt-3">
@@ -57,7 +57,7 @@
           <!-- Card 2: Productivity Gain -->
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
             <div class="flex items-center gap-2">
-              <TrendingUp class="w-4 h-4 text-amber-400" />
+              <img src="/images/enterprise_grade/productivity_gain_icon.png" alt="Productivity Gain" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Productivity Gain</span>
             </div>
             <div class="mt-3">
@@ -71,7 +71,7 @@
           <!-- Card 3: Support Tickets -->
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
             <div class="flex items-center gap-2">
-              <BarChart2 class="w-4 h-4 text-emerald-400" />
+              <img src="/images/enterprise_grade/support_tickets_icon.png" alt="Support Tickets" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Support Tickets</span>
             </div>
             <div class="mt-3">
@@ -85,7 +85,7 @@
           <!-- Card 4: Onboarding Speed -->
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[115px] dashboard-item-bg">
             <div class="flex items-center gap-2">
-              <Zap class="w-4 h-4 text-violet-400" />
+              <img src="/images/enterprise_grade/onboarding_speed_icon.png" alt="Onboarding Speed" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Onboarding Speed</span>
             </div>
             <div class="mt-3">
@@ -105,14 +105,14 @@
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[120px] dashboard-item-bg">
             <div class="flex items-center justify-between w-full">
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Documentation Health</span>
-              <TrendingUp class="w-4 h-4 text-emerald-400" />
+              <img src="/images/enterprise_grade/doc_health_icon.png" alt="Documentation Health" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
             </div>
             <div class="mt-3 space-y-2.5">
               <div class="text-3xl font-medium tracking-tight text-white">
                 94<span class="text-sm font-medium text-[#AEADAD]">/100</span>
               </div>
               <div class="w-full h-1.5 rounded-full bg-white/10 overflow-hidden relative">
-                <div class="absolute top-0 left-0 h-full w-[94%] rounded-full bg-gradient-to-r from-[#66DB3A] to-brand-primary" />
+                <div class="absolute top-0 left-0 h-full w-[80%] rounded-full bg-gradient-to-r from-[#66DB3A] to-brand-primary" />
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[120px] dashboard-item-bg">
             <div class="flex items-center justify-between w-full">
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Support Tickets</span>
-              <BarChart2 class="w-4 h-4 text-emerald-400" />
+              <img src="/images/enterprise_grade/support_tickets_icon.png" alt="Support Tickets" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
             </div>
             <div class="mt-2.5">
               <div class="flex items-baseline gap-2">
@@ -142,7 +142,7 @@
           <div class="rounded-xl p-4 border border-white/[0.08] flex flex-col justify-between min-h-[120px] dashboard-item-bg">
             <div class="flex items-center justify-between w-full">
               <span class="text-xs font-medium tracking-wide text-[#AEADAD]">Active Contributors</span>
-              <Users class="w-4 h-4 text-indigo-400" />
+              <img src="/images/enterprise_grade/contributors_icon.png" alt="Active Contributors" class="w-4 h-4 object-contain flex-shrink-0" loading="lazy" />
             </div>
             <div class="mt-3 space-y-2.5">
               <div class="text-[32px] font-medium tracking-tight leading-none text-white">143</div>
@@ -153,6 +153,7 @@
                   src="/images/dashboard/contributor_avatars_row.png" 
                   alt="Contributors Avatars" 
                   class="h-6 w-auto"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -165,5 +166,5 @@
 </template>
 
 <script setup>
-import { Clock, TrendingUp, Zap, BarChart2, Users, CheckCircle2 } from 'lucide-vue-next'
+import { CheckCircle2 } from 'lucide-vue-next'
 </script>

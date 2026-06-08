@@ -24,7 +24,7 @@
             :key="link.label"
             href="#"
             @click.prevent
-            class="text-sm font-semibold text-brand-primary/80 hover:text-brand-primary transition-all duration-150 nav-link-hover"
+            class="text-sm font-medium text-brand-primary/80 hover:text-brand-primary transition-all duration-150 nav-link-hover"
           >
             {{ link.label }}
           </a>

@@ -35,6 +35,7 @@
                 src="/images/community_driven/gamified_icon.png" 
                 alt="Gamified Contributions" 
                 class="w-6 h-6 object-contain" 
+                loading="lazy"
               />
             </div>
             <div>
@@ -54,6 +55,7 @@
                 src="/images/community_driven/micro_tasks_icon.png" 
                 alt="Micro-Contribution Architecture" 
                 class="w-6 h-6 object-contain" 
+                loading="lazy"
               />
             </div>
             <div>
@@ -73,6 +75,7 @@
                 src="/images/community_driven/mentorship_icon.png" 
                 alt="Mentorship Matching" 
                 class="w-6 h-6 object-contain" 
+                loading="lazy"
               />
             </div>
             <div>
@@ -92,6 +95,7 @@
                 src="/images/community_driven/peer_validation_icon.png" 
                 alt="Peer Validation Network" 
                 class="w-6 h-6 object-contain" 
+                loading="lazy"
               />
             </div>
             <div>
@@ -111,7 +115,7 @@
           <div class="space-y-4">
             
             <!-- Step 1 -->
-            <div class="p-4 border border-slate-100 bg-[#F8F9FA] rounded-xl flex items-center justify-between gap-4">
+            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
               <div class="flex items-center gap-3">
                 <div class="w-7 h-7 rounded-full bg-[#EEECFC] flex items-center justify-center text-xs font-bold text-brand-primary flex-shrink-0">
                   1
@@ -129,11 +133,12 @@
                 src="/images/community_driven/validated_check_icon.png" 
                 alt="Validated" 
                 class="w-5 h-5 flex-shrink-0" 
+                loading="lazy"
               />
             </div>
 
             <!-- Step 2 -->
-            <div class="p-4 border border-slate-100 bg-[#F8F9FA] rounded-xl flex items-center justify-between gap-4">
+            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
               <div class="flex items-center gap-3">
                 <div class="w-7 h-7 rounded-full bg-[#FFF5E5] flex items-center justify-center text-xs font-bold text-brand-accent flex-shrink-0">
                   2
@@ -153,7 +158,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="p-4 border border-slate-100 bg-[#F8F9FA] rounded-xl flex items-center justify-between gap-4">
+            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
               <div class="flex items-center gap-3">
                 <div class="w-7 h-7 rounded-full bg-[#E6F9EC] flex items-center justify-center text-xs font-bold text-brand-success flex-shrink-0">
                   3
@@ -171,11 +176,12 @@
                 src="/images/community_driven/validated_check_icon.png" 
                 alt="Validated" 
                 class="w-5 h-5 flex-shrink-0" 
+                loading="lazy"
               />
             </div>
 
             <!-- Step 4 -->
-            <div class="p-4 border border-slate-100 bg-[#F8F9FA] rounded-xl flex items-center justify-between gap-4">
+            <div class="p-4 border border-[#AEADAD] bg-[#F5F4F4] rounded-lg flex items-center justify-between gap-4">
               <div class="flex items-center gap-3">
                 <div class="w-7 h-7 rounded-full bg-[#24BD2E] flex items-center justify-center flex-shrink-0 text-white">
                   <svg 
@@ -204,6 +210,7 @@
                 src="/images/community_driven/completion_star_icon.png" 
                 alt="Star rating" 
                 class="w-5 h-5 flex-shrink-0" 
+                loading="lazy"
               />
             </div>
 

@@ -3,7 +3,7 @@
 A high-fidelity recreation of the Figma home page design built as a premium, responsive single-page web application using **Nuxt 3**, **Vue 3**, and **Tailwind CSS**.
 
 ## Live Demo
-* **Hosted URL**: [https://venturseed-technidox.vercel.app](https://venturseed-technidox.vercel.app)
+* **Hosted URL**: [https://technidoxx.netlify.app/](https://technidoxx.netlify.app/)
 
 ---
 
@@ -53,6 +53,8 @@ Following standard Nuxt 3 single-page application conventions:
 │       ├── pricing/         # Swinging price tag and rope layers
 │       ├── dashboard/       # Executive ROI dashboard backgrounds
 │       ├── logos/           # High-res brand logo assets
+│       ├── enterprise_grade/ # Custom metric card icons
+│       ├── built_for_every_team/ # Custom team card images & check bullet assets
 │       └── lottie/          # Interactive loader Lottie files
 ├── pixelay/                 # Deliverables folder for visual comparison
 │   ├── pixelay-desktop.png  # Desktop Pixelay overlay screenshot
@@ -73,18 +75,22 @@ Overlay screenshots and review notes can be found directly in the [`/pixelay`](.
 
 ---
 
-## Tradeoffs, Shortcuts, & Next Steps
+## Tradeoffs, Shortcuts, & Things We Would Do With More Time
 
 ### 1. Image Slicing and Swing physics
-* **Tradeoff**: In the original Figma mockup, the rope, ring, and tag were a single flat image. Rotating it resulted in shearing or required clipping out pieces, causing visual artifacts.
+* **Tradeoff**: In the original Figma mockup, the rope, ring, and tag were a single flat image. Rotating it would result in shearing or require clipping out pieces, causing visual artifacts.
 * **Solution**: Programmatically separated the image into `rope.png` (static background) and `loop_tag.png` (swinging element). Fitted a quadratic curve to the rope to draw it continuously under the loop. This ensures zero gaps and a 100% realistic rotation around the rope center.
 
 ### 2. Tailored Grid Layout
 * **Fidelity**: Applied a strict desktop 19-column grid overlay system to the header and hero wrapper to align columns exactly with Figma's custom layout grid.
 
-### 3. Future Improvements
-* **CMS Integration**: Convert sections into dynamically configurable components using standard Nuxt Content or a headless CMS (like Storyblok/Contentful).
-* **Nuxt Image Optimization**: Integrate `@nuxt/image` to serve modern formats (AVIF/WebP) and apply automatic responsive resizing on assets.
+### 3. Font-Weight & Alignment Corrections
+* **Fidelity**: Replaced standard Lucide icons with custom `bullet_check.png` assets, customized card corners and backgrounds (to `8px` and `#F5F4F4` / `#AEADAD`), and reduced font weights to match Figma text rendering.
+
+### 4. What We Would Do With More Time
+* **Nuxt Image Integration**: Install and configure `@nuxt/image` to dynamically generate responsive formats (AVIF/WebP) and scale assets according to the user's viewport density.
+* **Headless CMS Mapping**: Map the UI strings and use-case checklists to a headless CMS (like Storyblok or Sanity) or Nuxt Content. This would allow product teams to modify cards and copy without touching the code.
+* **Component Testing Suite**: Set up Vitest and Playwright to run automated visual regression checks, ensuring future PRs do not break figma alignment boundaries.
 
 ---
 

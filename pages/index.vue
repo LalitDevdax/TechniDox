@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <!-- Simulated loading screen for interactive Lottie visual -->
-    <div v-if="!mounted" class="fixed inset-0 flex flex-col items-center justify-center bg-white z-[9999]">
+  <div class="relative overflow-x-hidden">
+    <!-- Simulated loading screen for interactive Lottie visual (fades out on mount) -->
+    <div 
+      class="fixed inset-0 flex flex-col items-center justify-center bg-white z-[9999] transition-opacity duration-300 ease-out"
+      :class="{ 'opacity-0 pointer-events-none': mounted }"
+    >
       <lottie-player
         src="/images/lottie/loader.json"
         background="transparent"
@@ -12,8 +15,8 @@
       ></lottie-player>
     </div>
 
-    <!-- Main page content -->
-    <main v-else class="min-h-screen">
+    <!-- Main page content (Rendered immediately for SEO and search bots) -->
+    <main class="min-h-screen">
       <Header />
       <Hero />
       <AINativeSection />
@@ -35,6 +38,6 @@ const mounted = ref(false)
 onMounted(() => {
   const timer = setTimeout(() => {
     mounted.value = true
-  }, 1000)
+  }, 250) // Short timeout for snappy page transitions
 })
 </script>

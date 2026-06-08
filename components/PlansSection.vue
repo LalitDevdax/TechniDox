@@ -26,6 +26,7 @@
           src="/images/pricing/pricing_static_rope.png" 
           alt="Rope" 
           class="h-[210px] w-auto mx-auto absolute inset-0 pointer-events-none"
+          loading="lazy"
         />
 
         <!-- Swinging Tag & Text Overlay -->
@@ -34,6 +35,7 @@
             src="/images/pricing/pricing_swinging_tag.png" 
             alt="Pricing starts at $499/month" 
             class="h-[210px] w-auto mx-auto block"
+            loading="lazy"
           />
           <div class="absolute inset-x-0 bottom-[64px] flex flex-col items-center justify-center text-center">
             <p 
