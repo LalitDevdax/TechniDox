@@ -21,7 +21,6 @@ A high-fidelity recreation of the Figma home page design built as a premium, res
 ### What are Composables?
 In Nuxt 3 and Vue 3, **Composables** are reusable stateful functions that leverage the Vue Composition API. Instead of duplicating logic across components, features are encapsulated inside the `composables/` folder. Nuxt auto-imports these hooks so they are globally available without boilerplate imports.
 * **`useScrollDirection.js`**: Tracks user scroll direction. It shows the navigation header when scrolling up, hides it when scrolling down, and keeps it visible when the mobile menu is open.
-* **`useCopyToClipboard.js`**: A clipboard copy utility helper.
 
 ---
 
@@ -43,7 +42,6 @@ Following standard Nuxt 3 single-page application conventions:
 │   ├── CTASection.vue             # CTA card
 │   └── Footer.vue                 # Clean, grid-aligned footer columns
 ├── composables/             # Reusable Composition API hooks
-│   ├── useCopyToClipboard.js    # Modern clipboard copy utility with fallback
 │   └── useScrollDirection.js    # Tracks header visibility and scroll state
 ├── pages/
 │   └── index.vue            # Main landing page assembling sections (Single Page App)
