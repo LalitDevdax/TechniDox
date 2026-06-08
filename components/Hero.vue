@@ -8,7 +8,7 @@
     <img src="/images/hero/hero_documentation_preview.png" alt="Documentation card" class="absolute hidden xl:block pointer-events-none z-20 drop-shadow-xl" style="width:230px;left:18px;top:160px;" loading="eager" fetchpriority="high" />
     <img src="/images/hero/hero_interactive_guide.png"     alt="Guide preview"       class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;left:-8px;top:290px;" loading="eager" fetchpriority="high" />
     <img src="/images/hero/hero_api_list_card.png"         alt="API card"            class="absolute hidden xl:block pointer-events-none z-20 drop-shadow-xl" style="width:230px;right:18px;top:160px;" loading="eager" fetchpriority="high" />
-    <img src="/images/hero/hero_roi_analytics_preview.png" alt="Analytics card"      class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;right:-8px;top:290px;" loading="eager" fetchpriority="high" />
+    <img src="/images/hero/hero_roi_analytics_preview.png" alt="Analytics card"      class="absolute hidden xl:block pointer-events-none z-10 drop-shadow-lg"  style="width:210px;height:190px;object-fit:cover;object-position:center;right:-8px;top:290px;" loading="eager" fetchpriority="high" />
 
     <!-- Center content -->
     <div class="relative z-30 w-full max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
